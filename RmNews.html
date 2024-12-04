@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nasa Latest News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            background: #000;
+            color: white;
+            overflow-x: hidden;
+            width: 100%;
+            padding: 50px;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .heading {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 40px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .NewsSection {
+            padding: 10px;
+            min-height: 100vh;
+            width: 100vw;
+        }
+
+        .NewsSection h2 {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin: 50px 0;
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+        }
+
+        .NewsContent {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .part-1 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .part-2 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .part-3 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .part-4 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .part-5 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .part-6 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .part-7 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .part-8 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+
+        .News-Img {
+            width: 35%;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+
+        .News-Img img {
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        .contetntText {
+            width: 60%;
+            text-align: justify;
+        }
+
+        @media screen and (max-width:768px) {
+
+            /* HistoryMedia start */
+            .NewsSection {
+                padding: 0 20px;
+            }
+
+            .NewsContent {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .part-1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .News-Img {
+                width: 100%;
+                border-radius: 7px;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+
+            .News-Img img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .contetntText {
+                width: 100%;
+            }
+
+            .part-2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-4 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-5 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-6 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-7 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-8 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            /* HistoryMedia End */
+        }
+
+        @media screen and (max-width:540px) {
+
+            /* HistoryMedia Strat */
+            .heading {
+                font-size: 30px;
+            }
+
+            .NewsSection {
+                padding: 0 20px;
+            }
+
+            .NewsContent {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .part-1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .News-Img {
+                width: 100%;
+                border-radius: 7px;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+
+            .News-Img img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .contetntText {
+                width: 100%;
+            }
+
+            .part-2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-4 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-5 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-6 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-7 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .part-8 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            /* HistoryMedia End */
+        }
+
+        #BackBtn {
+            position: relative;
+            outline: none;
+            border: none;
+            padding: 7px 25px;
+            border: 1px solid red;
+            margin-top: 30px;
+            font-size: 14px;
+            background: transparent;
+            border-radius: 3px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #BackBtn a {
+            color: white;
+        }
+
+        #BackBtn::before {
+            content: "";
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #BackBtn:hover::before {
+            width: 100%;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>Latest News</h1>
+    </div>
+    <h2>Hubble Sees Evaporating Planet Getting the Hiccups</h2>
+    <div class="part-1">
+        <div class="News-Img">
+            <img src="./img/news/1].jpg" alt="News" title="News">
+        </div>
+        <div class="contetntText">
+            <p>A young planet whirling around a petulant red dwarf star is changing in unpredictable ways
+                orbit-by-orbit. It is so close to its parent star that it experiences a consistent, torrential
+                blast of energy, which evaporates its hydrogen atmosphere – causing it to puff off the
+                planet.<br><br>
+
+                But during one orbit observed with NASA's Hubble Space Telescope, the planet looked like it
+                wasn't losing any material at all, while an orbit observed with Hubble a year and a half later
+                showed clear signs of atmospheric loss.<br><br>
+
+                This extreme variability between orbits shocked astronomers. "We've never seen atmospheric
+                escape go from completely not detectable to very detectable over such a short period when a
+                planet passes in front of its star," said Keighley Rockcliffe of Dartmouth College in Hanover,
+                New Hampshire. "We were really expecting something very predictable, repeatable. But it turned
+                out to be weird. When I first saw this, I thought 'That can't be right.'"<br><br>
+
+                Rockcliffe was equally puzzled to see, when it was detectable, the planet's atmosphere puffing
+                out in front of the planet, like a headlight on a fast-bound train. "This frankly strange
+                observation is kind of a stress-test case for the modeling and the physics about planetary
+                evolution. This observation is so cool because we're getting to probe this interplay between the
+                star and the planet that is really at the most extreme," she said.
+
+            </p>
+
+
+        </div>
+    </div>
+
+    <h2>STScI Awarded Multi-Year Contract Extension for Roman Space Telescope</h2>
+    <div class="part-2">
+        <div class="News-Img">
+            <img src="./img/news/1.jpg" alt="News" title="News">
+        </div>
+        <div class="contetntText">
+            <p>NASA has awarded a contract extension to the Space Telescope Science Institute (STScI) in
+                Baltimore, Maryland, to continue acting as the Science Operations Center (SOC) for NASA’s Nancy
+                Grace Roman Space Telescope. The extension covers the period through launch, commissioning, and
+                the first year of operations.<br><br>
+
+                Roman is a NASA observatory that will study essential questions in a wide range of astrophysics
+                topics, such as the evolution of stars, planets, and galaxies, in addition to probing dark
+                energy and detecting thousands of new planets outside our solar system. With a launch commitment
+                no later than May 2027, and launch currently planned for late 2026, Roman will have a five-year
+                prime mission.<br><br>
+
+                Roman is primarily a survey observatory, with some additional observations set aside to
+                demonstrate the technology of a next-generation coronagraph instrument. Roman’s surveys are
+                designed to address a number of key science themes. Up to 75% of its observing time during the
+                first five years of operations will be dedicated to three core community surveys: the
+                High-Latitude Wide-Area Survey, the High-Latitude Time Domain Survey, and the Galactic Bulge
+                Time Domain Survey. Additional observing time is set aside for general astrophysics surveys that
+                will be selected throughout the course of the observatory’s operations. Observing time will be
+                made available to the astronomical community via a proposal process like that used to assign
+                time on the Hubble and James Webb Space Telescopes.
+            </p>
+
+
+        </div>
+    </div>
+
+    <h2>Hubble Celebrates 33rd Anniversary with a Peek into Nearby Star-Forming Region</h2>
+    <div class="part-3">
+        <div class="News-Img">
+            <img src="./img/news/2.jpg" alt="News" title="News">
+        </div>
+        <div class="contetntText">
+            <p>Astronomers are celebrating NASA's Hubble Space Telescope's 33rd launch anniversary with an
+                ethereal photo of a nearby star-forming region, NGC 1333. The nebula is in the Perseus molecular
+                cloud, and located approximately 960 light-years away.<br><br>
+
+                Hubble's colorful view, showcased through its unique capability to obtain images from
+                ultraviolet to near-infrared light, unveils an effervescent cauldron of glowing gasses and
+                pitch-black dust stirred up and blown around by several hundred newly forming stars embedded
+                within the dark cloud. Hubble just scratches the surface because most of the star birthing
+                firestorm is hidden behind clouds of fine dust – essentially soot – that are thicker toward the
+                bottom of the image. The blackness in the image is not empty space, but filled with obscuring
+                dust.<br><br>
+
+                To capture this image, Hubble peered through a veil of dust on the edge of a giant cloud of cold
+                molecular hydrogen – the raw material for fabricating new stars and planets under the relentless
+                pull of gravity. The image underscores the fact that star formation is a messy process in our
+                rambunctious universe.<br><br>
+
+                Ferocious stellar winds, likely from the bright blue star at the top of the image, are blowing
+                through a curtain of dust. The fine dust scatters the starlight at blue wavelengths.
+            </p>
+
+
+        </div>
+    </div>
+    </div>
+
+    <h2>Hubble Sees Possible Runaway Black Hole Creating a Trail of Stars</h2>
+    <div class="part-4">
+        <div class="News-Img">
+            <img src="./img/news/3.png" alt="News" title="News">
+        </div>
+        <div class="contetntText">
+            <p>There's an invisible monster on the loose, barreling through intergalactic space so fast that if
+                it were in our solar system, it could travel from Earth to the Moon in 14 minutes. This
+                supermassive black hole, weighing as much as 20 million Suns, has left behind a
+                never-before-seen 200,000-light-year-long "contrail" of newborn stars, twice the diameter of our
+                Milky Way galaxy. It's likely the result of a rare, bizarre game of galactic billiards among
+                three massive black holes.<br><br>
+
+                Rather than gobbling up stars ahead of it, like a cosmic Pac-Man, the speedy black hole is
+                plowing into gas in front of it to trigger new star formation along a narrow corridor. The black
+                hole is streaking too fast to take time for a snack. Nothing like it has ever been seen before,
+                but it was captured accidentally by NASA's Hubble Space Telescope.<br><br>
+
+                "We think we're seeing a wake behind the black hole where the gas cools and is able to form
+                stars. So, we're looking at star formation trailing the black hole," said Pieter van Dokkum of
+                Yale University in New Haven, Connecticut. "What we're seeing is the aftermath. Like the wake
+                behind a ship we're seeing the wake behind the black hole." The trail must have lots of new
+                stars, given that it is almost half as bright as the host galaxy it is linked to.<br><br>
+
+                The black hole lies at one end of the column, which stretches back to its parent galaxy. There
+                is a remarkably bright knot of ionized oxygen at the outermost tip of the column. Researchers
+                believe gas is probably being shocked and heated from the motion of the black hole hitting the
+                gas, or it could be radiation from an accretion disk around the black hole. "Gas in front of it
+                gets shocked because of this supersonic, very high-velocity impact of the black hole moving
+                through the gas. How it works exactly is not really known," said van Dokkum.
+            </p>
+
+
+        </div>
+    </div>
+    </div>
+
+    <h2>Giant Galaxy Seen in 3D by NASA's Hubble Space Telescope and Keck Observatory</h2>
+    <div class="part-5">
+        <div class="News-Img">
+            <img src="./img/news/4.jpg" alt="News" title="News">
+        </div>
+        <div class="contetntText">
+            <p>Though we live in a vast three-dimensional universe, celestial objects seen through a telescope
+                look flat because everything is so far away. Now for the first time, astronomers have measured
+                the three-dimensional shape of one of the biggest and closest elliptical galaxies to us, M87.
+                This galaxy turns out to be "triaxial," or potato-shaped. This stereo vision was made possible
+                by combining the power of NASA's Hubble Space Telescope and the ground-based W. M. Keck
+                Observatory on Maunakea, Hawaii.<br><br>
+
+                In most cases, astronomers must use their intuition to figure out the true shapes of deep-space
+                objects. For example, the whole class of huge galaxies called "ellipticals" look like blobs in
+                pictures. Determining the true shape of giant elliptical galaxies will help astronomers
+                understand better how large galaxies and their central large black holes form.<br><br>
+
+                Scientists made the 3D plot by measuring the motions of stars that swarm around the galaxy's
+                supermassive central black hole. The stellar motion was used to provide new insights into the
+                shape of the galaxy and its rotation, and it also yielded a new measurement of the black hole's
+                mass. Tracking the stellar speeds and position allowed researchers to build a three-dimensional
+                view of the galaxy.<br><br>
+
+                Astronomers at the University of California, Berkeley, were able to determine the mass of the
+                black hole at the galaxy's core to a high precision, estimating it at 5.4 billion times the mass
+                of the Sun. Hubble observations in 1995 first measured the M87 black hole as being 2.4 billion
+                solar masses, which astronomers deduced by clocking the speed of the gas swirling around the
+                black hole. When the Event Horizon Telescope, an international collaboration of ground-based
+                telescopes, released the first-ever image of the same black hole in 2019, the size of its
+                pitch-black event horizon allowed researchers to calculate a mass of 6.5 billion solar masses
+                using Einstein's theory of general relativity.
+            </p>
+
+
+        </div>
+    </div>
+    </div>
+
+    <h2>NASA's Hubble Hunts for Intermediate-Sized Black Hole Close to Home</h2>
+    <div class="part-6">
+        <div class="News-Img">
+            <img src="./img/news/5.jpg" alt="News" title="News">
+        </div>
+        <div class="contetntText">
+            <p>Astronomers using NASA's Hubble Space Telescope have come up with what they say is some of their
+                best evidence yet for the presence of a rare class of "intermediate-sized" black hole that may
+                be lurking in the heart of the closest globular star cluster to Earth, located 6,000 light-years
+                away.<br><br>
+
+                Like intense gravitational potholes in the fabric of space, virtually all black holes seem to
+                come in two sizes: small and humongous. It's estimated that our galaxy is littered with 100
+                million small black holes (several times the mass of our Sun) created from exploded stars. The
+                universe at large is flooded with supermassive black holes, weighing millions or billions of
+                times our Sun’s mass and found in the centers of galaxies.<br><br>
+
+                A long-sought missing link is an intermediate-mass black hole, weighing in somewhere between 100
+                and 100,000 solar masses. How would they form, where would they hang out, and why do they seem
+                to be so rare?<br><br>
+
+                Astronomers have identified other possible intermediate-mass black holes through a variety of
+                observational techniques. Two of the best candidates — 3XMM J215022.4−055108, which Hubble
+                helped discover in 2020, and HLX-1, identified in 2009 — reside in dense star clusters in the
+                outskirts of other galaxies. Each of these possible black holes has the mass of tens of
+                thousands of suns, and may have once been at the centers of dwarf galaxies. NASA’s Chandra X-ray
+                observatory has also helped make many possible intermediate black hole discoveries, including a
+                large sample in 2018.<br><br>
+
+                Looking much closer to home, there have been a number of suspected intermediate-mass black holes
+                detected in dense globular star clusters orbiting our Milky Way galaxy. For example, in 2008, Hubble
+                astronomers announced the suspected presence of an intermediate-mass black hole in the globular cluster
+                Omega Centauri. For a number of reasons, including the need for more data, these and other
+                intermediate-mass black hole findings still remain inconclusive and do not rule out alternative
+                theories.
+            </p>
+
+
+        </div>
+    </div>
+    </div>
+
+    <h2>Hubble Follows Shadow Play Around Planet-Forming Disk</h2>
+    <div class="part-7">
+        <div class="News-Img">
+            <img src="./img/news/6.png" alt="News" title="News">
+        </div>
+        <div class="contetntText">
+            <p>The young star TW Hydrae is playing "shadow puppets" with scientists observing it with NASA's
+                Hubble Space Telescope.<br><br>
+
+                In 2017, astronomers reported discovering a shadow sweeping across the face of a vast
+                pancake-shaped gas-and-dust disk surrounding the red dwarf star. The shadow isn't from a planet,
+                but from an inner disk slightly inclined relative to the much larger outer disk – causing it to
+                cast a shadow. One explanation is that an unseen planet's gravity is pulling dust and gas into
+                the planet's inclined orbit.<br><br>
+
+                Now, a second shadow – playing a game of peek-a-boo – has emerged in just a few years between
+                observations stored in Hubble's MAST archive. This could be from yet another disk nestled inside
+                the system. The two disks are likely evidence of a pair of planets under construction.<br><br>
+
+                TW Hydrae is less than 10 million years old and resides about 200 light-years away. In its
+                infancy, our solar system may have resembled the TW Hydrae system, some 4.6 billion years ago.
+                Because the TW Hydrae system is tilted nearly face-on to our view from Earth, it is an optimum
+                target for getting a bull's-eye-view of a planetary construction yard.
+
+            </p>
+
+
+        </div>
+    </div>
+    </div>
+
+    <h2>Hubble Unexpectedly Finds Double Quasar in Distant Universe</h2>
+    <div class="part-8">
+        <div class="News-Img">
+            <img src="./img/news/7.png" alt="News" title="News">
+        </div>
+        <div class="contetntText">
+            <p>The early universe was a rambunctious place where galaxies often bumped into each other and even
+                merged together. Using NASA's Hubble Space Telescope and other space and ground-based
+                observatories, astronomers investigating these developments have made an unexpected and rare
+                discovery: a pair of gravitationally bound quasars, both blazing away inside two merging
+                galaxies. They existed when the universe was just 3 billion years old.<br><br>
+
+                Quasars are bright objects powered by voracious, supermassive black holes blasting out ferocious
+                fountains of energy as they engorge themselves on gas, dust, and anything else within their
+                gravitational grasp.<br><br>
+
+                "We don't see a lot of double quasars at this early time in the universe. And that's why this
+                discovery is so exciting," said graduate student Yu-Ching Chen of the University of Illinois at
+                Urbana-Champaign, lead author of this study.<br><br>
+
+                Finding close binary quasars is a relatively new area of research that has just developed in the
+                past 10 to 15 years. Today's powerful new observatories have allowed astronomers to identify
+                instances where two quasars are active at the same time and are close enough that they will
+                eventually merge.<br><br>
+
+                There is increasing evidence that large galaxies are built up through mergers. Smaller systems come
+                together to form bigger systems and ever larger structures. During that process there should be pairs of
+                supermassive black holes formed within the merging galaxies. "Knowing about the progenitor population of
+                black holes will eventually tell us about the emergence of supermassive black holes in the early
+                universe, and how frequent those mergers could be," said Chen.<br><br>
+
+                "We're starting to unveil this tip of the iceberg of the early binary quasar population," said Xin Liu
+                of the University of Illinois at Urbana-Champaign. "This is the uniqueness of this study. It is actually
+                telling us that this population exists, and now we have a method to identify double quasars that are
+                separated by less than the size of a single galaxy."<br><br>
+
+                This was a needle-in-haystack search that required the combined power of NASA's Hubble Space Telescope
+                and the W.M. Keck Observatories in Hawaii. Multi-wavelength observations from the International Gemini
+                Observatory in Hawaii, NSF's Karl G. Jansky Very Large Array in New Mexico, and NASA's Chandra X-ray
+                Observatory also contributed to understanding the dynamic duo. And, ESA (European Space Agency)'s Gaia
+                space observatory helped identify this double quasar in the first place.<br><br>
+
+                "Hubble's sensitivity and resolution provided pictures that allow us to rule out other possibilities for
+                what we are seeing," said Chen. Hubble shows, unequivocally, that this is indeed a genuine pair of
+                supermassive black holes, rather than two images of the same quasar created by a foreground
+                gravitational lens. And, Hubble shows a tidal feature from the merging of two galaxies, where gravity
+                distorts the shape of the galaxies forming two tails of stars.<br><br>
+
+                <button id="BackBtn"><a href="index.html">Back</a></button>
+            </p>
+
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
